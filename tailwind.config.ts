@@ -6,7 +6,7 @@ const config = {
     "./app/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./pages/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}"
+    "./utils/**/*.{ts,tsx}"
   ],
   safelist: [
     "bg-white",
