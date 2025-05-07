@@ -1,17 +1,13 @@
+/** next.config.js */
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: '/portfolio',
-  assetPrefix: '/portfolio/',
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
-  },
-}
+  // no basePath
+  assetPrefix: "https://driesmelottepxl.github.io/portfolio/",
+  trailingSlash: true,       // optional, but often helps with clean URLs
+  images: { unoptimized: true },
+  eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: true },
+};
 
-export default nextConfig
+export default nextConfig;
